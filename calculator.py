@@ -1,5 +1,7 @@
 def add(a, b):
     return a + b
 def divide(a, b):
-    return a / b  # BUG: no check for division by zero!
+    if b==0:
+        raise ValueError("NaN")
+    return 0
 print("Calculator ready")
